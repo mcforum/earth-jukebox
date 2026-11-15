@@ -97,7 +97,7 @@ Plain HTML, CSS and JavaScript with the Web Audio API. No frameworks, no externa
 
 ## Use of AI
 
-The code, the texts and the demo video of this project were made with the help of Claude, an AI assistant made by Anthropic. The demo video carries a visible AI notice, and its voice-over is synthetic speech (Flite). Every code file carries an AI notice in its header. The idea, the selection of NASA visualizations, testing and the final decisions were made by the team. The NASA visualizations were not altered by AI; they were only scaled down and shortened.
+The code, the texts and the demo video of this project were made with the help of Claude, an AI assistant made by Anthropic. The demo video carries a visible AI notice, and its voice-over is synthetic speech (Flite). Every code file carries an AI notice in its header. The logo was generated with ChatGPT and carries a visible AI notice. The idea, the selection of NASA visualizations, testing and the final decisions were made by the team. The NASA visualizations were not altered by AI; they were only scaled down and shortened.
 
 ## Credits
 
