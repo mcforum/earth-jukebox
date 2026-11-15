@@ -1,4 +1,5 @@
 'use strict';
+/* Written with AI assistance: Claude, an AI assistant by Anthropic. See README, section "Use of AI". */
 /* Earth Jukebox records: what each NASA visualization shows and how its colours are read.
    A decoder turns one pixel (r,g,b in 0..1) into a data value v (0..1) and a category c,
    or returns false when the pixel carries no data (background, land, labels). */

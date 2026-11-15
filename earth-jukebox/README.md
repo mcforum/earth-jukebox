@@ -12,7 +12,7 @@ Made by team Planet Playback for the 2026 NASA Space Apps Challenge, challenge "
 
 **Online:** https://mcforum.github.io/earth-jukebox/earth-jukebox/
 
-**30-second demo video:** https://drive.google.com/file/d/16vjFJ8R1w7P3jqnJA98jC0C28foxym59/view?usp=sharing (also in this repository as `Earth-Jukebox-Demo.mp4`). Its voice-over is synthetic speech, and its labels and tones were computed with the project's own colour decoders.
+**30-second demo video:** https://mcforum.github.io/earth-jukebox/earth-jukebox/Earth-Jukebox-Demo.mp4 (also in this repository as `Earth-Jukebox-Demo.mp4`). Its voice-over is synthetic speech, and its labels and tones were computed with the project's own colour decoders.
 
 **On your own computer (Windows):**
 
@@ -95,7 +95,7 @@ Plain HTML, CSS and JavaScript with the Web Audio API. No frameworks, no externa
 
 ## Use of AI
 
-The code and the texts of this project were written with the help of Claude, an AI assistant made by Anthropic. The idea, the selection of NASA visualizations, testing and the final decisions were made by the team. The NASA visualizations were not altered by AI; they were only scaled down and shortened.
+The code, the texts and the demo video of this project were made with the help of Claude, an AI assistant made by Anthropic. The demo video carries a visible AI notice, and its voice-over is synthetic speech (Flite). Every code file carries an AI notice in its header. The idea, the selection of NASA visualizations, testing and the final decisions were made by the team. The NASA visualizations were not altered by AI; they were only scaled down and shortened.
 
 ## Credits
 

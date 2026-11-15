@@ -1,4 +1,5 @@
 'use strict';
+/* Written with AI assistance: Claude, an AI assistant by Anthropic. See README, section "Use of AI". */
 /* Earth Jukebox lens: lays an explain-and-listen layer over any picture or video.
    Point at the picture to hear and read the data under the pointer.
    Start listening and the zones of the picture take turns as notes.

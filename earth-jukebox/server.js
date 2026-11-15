@@ -1,3 +1,4 @@
+/* Written with AI assistance: Claude, an AI assistant by Anthropic. See README, section "Use of AI". */
 // Local static server for Earth Jukebox. Listens on this computer only and supports
 // HTTP Range requests so videos can loop and seek.
 const http=require('http'),fs=require('fs'),path=require('path');
