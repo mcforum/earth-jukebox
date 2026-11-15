@@ -1,4 +1,5 @@
 'use strict';
+/* Written with AI assistance: Claude, an AI assistant by Anthropic. See README, section "Use of AI". */
 /* Earth Jukebox Lens, browser extension part: adds the lens to the largest picture or video
    on a page of NASA's Scientific Visualization Studio (svs.gsfc.nasa.gov). */
 (function(){
