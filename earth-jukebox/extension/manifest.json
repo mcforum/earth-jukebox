@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Earth Jukebox Lens",
+  "version": "1.0",
+  "description": "Hear and read what NASA Earth visualizations show. Adds a point-and-listen layer to pictures and videos on NASA's Scientific Visualization Studio.",
+  "icons": { "128": "logo.png" },
+  "content_scripts": [
+    { "matches": ["https://svs.gsfc.nasa.gov/*"], "js": ["records.js", "lens.js", "ext.js"], "run_at": "document_idle" }
+  ]
+}

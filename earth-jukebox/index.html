@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; media-src 'self' blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Earth Jukebox</title>
+<meta name="description" content="Earth Jukebox lets you hear and read what NASA's Earth visualizations show. Point at the picture and it tells you what is there.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#stage">Skip to the picture</a>
+
+<header class="top">
+  <div class="mark">
+    <h1>Earth Jukebox</h1>
+    <p>Point at NASA’s pictures of Earth and hear what they show.</p>
+  </div>
+  <div class="top-actions">
+    <label class="check"><input type="checkbox" id="voice" checked> Voice guide</label>
+    <button type="button" class="btn" id="helpBtn" aria-expanded="false" aria-controls="help">How it works</button>
+  </div>
+</header>
+
+<main>
+  <div class="deck">
+    <section class="screen" aria-label="Player">
+      <div class="stage" id="stage">
+        <video id="video" playsinline loop muted preload="auto"></video>
+        <img id="still" alt="" hidden>
+        <p id="msg" role="alert" hidden></p>
+      </div>
+      <p id="summary" class="subtitle"></p>
+      <div class="transport">
+        <button type="button" class="play" id="play" aria-pressed="false">Play</button>
+        <input type="range" id="seek" min="0" max="1" step="0.01" value="0" aria-label="Position in the video">
+        <output id="time" for="seek">0:00</output>
+      </div>
+      <div class="transport second">
+        <button type="button" class="btn" id="describe">Describe this</button>
+        <button type="button" class="btn" id="rec" aria-pressed="false">Record the sound</button>
+        <label class="vol">Volume <input type="range" id="vol" min="0" max="1" step="0.01" value="0.8"></label>
+      </div>
+      <div class="howto">
+        <p><b>Point.</b> Move the mouse over the picture, or click it and use the arrow keys. A tone and a label tell you what is at that spot. Hold still and the voice reads it out.</p>
+        <p><b>Play.</b> The parts of the picture take turns as notes, and each one is labelled on screen while it sounds.</p>
+      </div>
+    </section>
+
+    <nav class="selector" aria-labelledby="pickH">
+      <h2 id="pickH">Pick a record</h2>
+      <ol id="strips"></ol>
+      <label class="own" id="own">
+        <input type="file" id="file" accept="video/*,image/*">
+        <span>Open your own picture or video. You can also drop a file anywhere on the page.</span>
+      </label>
+    </nav>
+  </div>
+
+  <section class="about">
+    <div>
+      <h2 id="title">Choose a record to start</h2>
+      <p id="shows"></p>
+      <p id="colors"></p>
+      <p id="credit" class="credit"></p>
+    </div>
+    <div>
+      <h3>What you hear</h3>
+      <p id="how"></p>
+      <div id="keys" class="keys" role="group" aria-label="Try the sounds"></div>
+      <p id="point" class="now" aria-live="off"></p>
+    </div>
+  </section>
+
+  <section id="help" class="help" hidden aria-labelledby="helpH">
+    <h2 id="helpH">How Earth Jukebox reads a picture</h2>
+    <p>NASA’s Earth pictures store their data as colour. Earth Jukebox knows the colour scale of each record, so it can turn the colour at any spot back into what it stands for, such as a water temperature or a kind of particle, and then say it and play it.</p>
+    <dl>
+      <dt>Pointing</dt><dd>The tone under your pointer gets higher as the value gets higher. Where there is no data, such as land on an ocean map, the tone stops. On flat world maps you also get the name of the sea or region and its coordinates.</dd>
+      <dt>Playing</dt><dd>The picture is split into a few parts, for example north, tropics and south. They play one after another, always in the same order, followed by a short pause. The part that sounds is outlined and labelled.</dd>
+      <dt>A little, some, a lot</dt><dd>For records that show an amount, the words compare each part with the busiest moment of that record so far. They are not exact measurements.</dd>
+      <dt>Trying the sounds</dt><dd>Under “What you hear” there is a button for each sound, so you can learn what cold and hot, or smoke and dust, sound like before you start.</dd>
+    </dl>
+    <p>Nothing is recorded in advance. Every sound is made in the moment from the picture on screen.</p>
+    <h3>Keyboard</h3>
+    <p><kbd>Space</kbd> play or pause. <kbd>1</kbd> to <kbd>8</kbd> pick a record. <kbd>D</kbd> describe the record. On the picture: arrow keys move the pointer, <kbd>Shift</kbd> moves it faster, <kbd>Enter</kbd> reads the spot out, <kbd>Esc</kbd> lets go.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Made for the 2026 NASA Space Apps Challenge, “The Earth Information Jukebox”. Visualizations by NASA’s Scientific Visualization Studio and the Earth Information Center. NASA does not endorse this project.</p>
+</footer>
+<script src="records.js"></script>
+<script src="lens.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
