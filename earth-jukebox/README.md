@@ -10,9 +10,9 @@ Made by team Planet Playback for the 2026 NASA Space Apps Challenge, challenge "
 
 ## Try it
 
-**Online:** https://mcforum.github.io/earth-jukebox/
+**Online:** https://mcforum.github.io/earth-jukebox/earth-jukebox/
 
-**30-second demo video:** [Earth-Jukebox-Demo.mp4](Earth-Jukebox-Demo.mp4). Its voice-over is synthetic speech, and its labels and tones were computed with the project's own colour decoders.
+**30-second demo video:** https://drive.google.com/file/d/16vjFJ8R1w7P3jqnJA98jC0C28foxym59/view?usp=sharing (also in this repository as `Earth-Jukebox-Demo.mp4`). Its voice-over is synthetic speech, and its labels and tones were computed with the project's own colour decoders.
 
 **On your own computer (Windows):**
 
